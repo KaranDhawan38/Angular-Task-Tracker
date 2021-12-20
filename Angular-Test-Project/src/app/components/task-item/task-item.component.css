@@ -1,0 +1,22 @@
+.task{
+    background-color: #f4f4f4bf;
+    padding: 1px 15px 1px 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border: 1px black solid;
+}
+
+.task h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reminder{
+    border-left: 5px blue solid;
+}
+
+.edit-icon{
+    margin-right: 10px;
+    font-size: 15px;
+}

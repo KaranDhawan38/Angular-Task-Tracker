@@ -1,0 +1,17 @@
+<form class="login-form" (ngSubmit)="onSubmit()">
+    <p><b>{{headingText}}</b></p>
+    <div class="form-control username-control">
+        <label for="Username">Username : </label>
+        <input type="email" [(ngModel)]="username" name="Username" id="Username" placeholder="Enter Username..."  maxlength="12" required>
+    </div>
+    <div class="form-control">
+        <label for="Password">Password : </label>
+        <input type="password" [(ngModel)]="password" name="Password" id="Password" placeholder="Enter Password...">
+    </div>
+    <div>
+        <input class="submit-btn" [ngStyle]="{'background-color':'lightblue'}" type="submit" value="{{btnText}}">
+    </div>
+    <p>New here? <a routerLink="/signup">Click here</a> to Sign Up!</p>
+    <p>Or Forgot Password? <a routerLink="/forgotPassword">Click here</a> to Reset Password!</p>
+</form>
+

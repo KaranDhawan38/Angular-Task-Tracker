@@ -1,0 +1,34 @@
+.account-details-form{
+    border: 1px black solid;
+    padding: 12px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-control{
+    margin-bottom: 25px;
+}
+
+.email-control{
+    margin-left: -4px;
+}
+
+.username-control{
+    margin-left: -4px;
+}
+
+input{
+    width: 200px;
+}
+
+.submit-btn{
+    cursor: pointer;
+    width: 150px;
+    margin-left: 10px;
+    background-color: lightgreen;
+}
+
+.info-icon{
+    color: grey !important;
+    margin-right: 10px;
+}

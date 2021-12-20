@@ -1,0 +1,28 @@
+<header>
+    <div>
+        <button class="user-icon-button" (click)="toggleDropdownMenu()"> 
+            <fa-icon class="user-icon" [ngStyle]="{'color': 'black', 'cursor': 'pointer'}"  [icon]="faUser"></fa-icon>
+            <span>{{username}}</span>
+            <fa-icon class="down-icon" [ngStyle]="{'color': 'black', 'cursor': 'pointer'}"  [icon]="faCaretDown"></fa-icon>
+        </button>
+        <div id="userDropdown" class="dropdown dropdown-content">
+            <a href="/accountSettings">
+                <fa-icon class="drop-down-icon" [ngStyle]="{'color': 'black', 'cursor': 'pointer'}"  [icon]="faUserCog"></fa-icon>
+                <span>Change Account Details</span>
+            </a>
+            <a href="/changePassword">
+                <fa-icon class="drop-down-icon" [ngStyle]="{'color': 'black', 'cursor': 'pointer'}"  [icon]="faLock"></fa-icon>
+                <span>Change Password</span> 
+            </a>
+            <a href="#" (click)="logout()">
+                <fa-icon class="drop-down-icon" [ngStyle]="{'color': 'black', 'cursor': 'pointer'}"  [icon]="faSignOutAlt"></fa-icon>
+                 <span>Logout</span>   
+                </a>
+          </div>
+    </div>
+</header>
+<div class="add-task-button-container">
+    <app-button [color]="buttonColor" [text]="buttonText" (btnClick)='toggleAddTask()'></app-button>
+</div>
+
+

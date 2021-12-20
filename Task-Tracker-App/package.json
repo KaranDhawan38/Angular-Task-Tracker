@@ -1,0 +1,25 @@
+{
+  "name": "task-tracker-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karan Dhawan",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "googleapis": "^92.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.11",
+    "nodemailer": "^6.7.2",
+    "safe-timers": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}

@@ -1,0 +1,36 @@
+.add-update-form{
+    border: 1px black solid;
+    padding: 12px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.add-update-form .form-control{
+    margin-bottom: 20px;
+}
+
+.add-update-form .form-control #Reminder{
+    cursor: pointer;
+}
+
+.add-update-form .due-date-control{
+    margin-left: 8px;
+}
+
+.add-update-form .set-reminder-control{
+    margin-left: -18px;
+}
+
+.add-update-form input{
+    width: 200px;
+}
+
+.submit-btn{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+    .form-control {
+        margin-left: 0!important;
+    }
+}

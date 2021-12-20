@@ -1,0 +1,3 @@
+<app-add-update-task [showForm] = "showForm" (submitEvent)="addTask($event)" (editTaskEvent)="updateTask($event)" [formMode]="formMode" [task]="task"></app-add-update-task>
+<p *ngIf="!!!tasks.length" class="no-task-found-text">0 Tasks found. Click on Add Task button to add a task.</p>
+<app-task-item *ngFor="let task of tasks" [task]="task" (onDeleteEvent)="deleteTask(task)" (toggleReminderEvent)="toggleReminder(task)" (editTaskEvent)="editTask(task)"></app-task-item>

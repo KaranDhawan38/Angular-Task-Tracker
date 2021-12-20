@@ -1,0 +1,9 @@
+<div class="task" [ngClass]="{reminder : taskReminder}" (dblclick)="toggleReminder(task)">
+    <h3>{{taskTitle}} 
+        <div>
+            <fa-icon class="edit-icon" [ngStyle]="{'color': 'black', 'cursor': 'pointer'}"  [icon]="faPencilAlt" (click)="onEditBtnClick(task)"></fa-icon>
+            <fa-icon [ngStyle]="{'color': 'red', 'cursor': 'pointer'}"  [icon]="faTimes" (click)="onDeleteBtnClick(task)"></fa-icon>
+        </div>
+    </h3>
+    <p>{{dateText}}{{datePostfix}}  {{monthText}} {{yearText}} at {{hoursText}}:{{minutestText}}</p>
+</div>

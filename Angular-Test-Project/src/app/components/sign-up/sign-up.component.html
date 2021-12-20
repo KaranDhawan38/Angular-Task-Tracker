@@ -1,0 +1,24 @@
+<form class="sign-up-form" (ngSubmit)="onSubmit()">
+    <p><b>{{headingText}}</b></p>
+    <div class="form-control username-control">
+        <label for="Username">Username : </label>
+        <input type="email" [(ngModel)]="username" name="Username" id="Username" placeholder="Enter Username..."  maxlength="12" required>
+    </div>
+    <div class="form-control email-control">
+        <fa-icon class="info-icon" [ngStyle]="{'color': 'black', 'cursor': 'pointer'}"  [icon]="faInfoCircle" title="This Email will be used to send reminders of tasks if you set them!"></fa-icon>
+        <label for="Email">Email : </label>
+        <input type="email" [(ngModel)]="email" name="Email" id="Email" placeholder="Enter Email..." required>
+    </div>
+    <div class="form-control">
+        <label for="Password">Password : </label>
+        <input type="password" [(ngModel)]="password" name="Password" id="Password" placeholder="Enter Password..." required>
+    </div>
+    <div class="form-control confirm-pass-control">
+        <label for="ConfirmPassword">Confirm Password : </label>
+        <input type="password" [(ngModel)]="confirmPassword" name="ConfirmPassword" id="ConfirmPassword" placeholder="Enter Password Again..." required>
+    </div>
+    <div>
+        <input class="submit-btn" [ngStyle]="{'background-color':'lightblue'}" type="submit" value="{{btnText}}">
+    </div>
+    <p>Already have account? <a routerLink="/login">Click here</a> to Login!</p>
+</form>

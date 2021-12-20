@@ -1,0 +1,36 @@
+.app-container {
+    border: 1px black solid;
+    padding: 0px 15px 15px 15px;
+    background-color: #ffffffb3;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    width: 94%;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    .app-container {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .app-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .app-container {
+        width: 87%;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .app-container {
+        width: 85%;
+    }
+}

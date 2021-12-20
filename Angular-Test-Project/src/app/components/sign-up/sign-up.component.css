@@ -1,0 +1,41 @@
+.sign-up-form{
+    border: 1px black solid;
+    padding: 12px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.sign-up-form .form-control{
+    margin-bottom: 25px;
+}
+
+.sign-up-form .email-control{
+    margin-left: -4px;
+}
+
+.sign-up-form .username-control{
+    margin-left: -4px;
+}
+
+.sign-up-form .confirm-pass-control{
+    margin-left: -58px;
+}
+
+.sign-up-form input{
+    width: 200px;
+}
+
+.submit-btn{
+    cursor: pointer;
+}
+
+.info-icon{
+    color: grey !important;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .form-control {
+        margin-left: 0!important;
+    }
+}

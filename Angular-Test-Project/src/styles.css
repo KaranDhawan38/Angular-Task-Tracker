@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+.bg-image{
+    background-image: url(TaskTrackerBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    filter: brightness(80%) blur(6px) hue-rotate(180deg);
+    -webkit-filter: brightness(80%) blur(6px) hue-rotate(150deg);
+}

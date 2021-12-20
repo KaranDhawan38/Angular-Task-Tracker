@@ -1,0 +1,22 @@
+.login-form{
+    border: 1px black solid;
+    padding: 12px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.login-form .form-control{
+    margin-bottom: 25px;
+}
+
+.login-form .username-control{
+    margin-left: -4px;
+}
+
+.login-form input{
+    width: 200px;
+}
+
+.submit-btn{
+    cursor: pointer;
+}

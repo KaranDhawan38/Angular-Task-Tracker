@@ -1,0 +1,18 @@
+<form class="add-update-form" *ngIf="showForm" (ngSubmit)="onSubmit()">
+    <p><b>{{headingText}}</b></p>
+    <div class="form-control">
+        <label for="text">Task Name : </label>
+        <input [(ngModel)]="task.text" type="text" name="text" id="Text" placeholder="Add Task Name...">
+    </div>
+    <div class="form-control due-date-control">
+        <label for="Date">Due Date : </label>
+        <input [(ngModel)]="task.day" type="datetime-local" name="Date" id="Date" placeholder="Add Due Date...">
+    </div>
+    <div class="form-control set-reminder-control">
+        <label for="Reminder">Set Reminder : </label>
+        <input [(ngModel)]="task.reminder" type="checkbox" name="Reminder" id="Reminder" placeholder="Add Reminder...">
+    </div>
+    <div>
+        <input class="submit-btn" [ngStyle]="{'background-color':'lightgreen'}" type="submit" value="{{saveBtnText}}">
+    </div>
+</form>
